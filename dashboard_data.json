@@ -1,0 +1,80 @@
+[
+    {
+        "round": 1,
+        "clients": [
+            {
+                "name": "client_0",
+                "loss": 0.6147490739822388,
+                "weight": 1.0,
+                "malicious": false,
+                "removed": false
+            },
+            {
+                "name": "client_1",
+                "loss": 0.5135400295257568,
+                "weight": 1.0,
+                "malicious": false,
+                "removed": false
+            },
+            {
+                "name": "client_2",
+                "loss": 0.6127634644508362,
+                "removed": true,
+                "malicious": true
+            }
+        ],
+        "verification": "success"
+    },
+    {
+        "round": 2,
+        "clients": [
+            {
+                "name": "client_0",
+                "loss": 0.5188142657279968,
+                "weight": 0.4170637765146246,
+                "malicious": false,
+                "removed": false
+            },
+            {
+                "name": "client_1",
+                "loss": 0.5267083048820496,
+                "weight": 0.4170938640595501,
+                "malicious": false,
+                "removed": false
+            },
+            {
+                "name": "client_2",
+                "loss": 0.5703983902931213,
+                "removed": true,
+                "malicious": true
+            }
+        ],
+        "verification": "success"
+    },
+    {
+        "round": 3,
+        "clients": [
+            {
+                "name": "client_0",
+                "loss": 0.38547009229660034,
+                "weight": 0.41736784604256605,
+                "malicious": false,
+                "removed": false
+            },
+            {
+                "name": "client_1",
+                "loss": 0.3433131277561188,
+                "weight": 0.4004289556599187,
+                "malicious": false,
+                "removed": false
+            },
+            {
+                "name": "client_2",
+                "loss": 0.41152510046958923,
+                "removed": true,
+                "malicious": true
+            }
+        ],
+        "verification": "success"
+    }
+]
