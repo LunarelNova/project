@@ -1,3 +1,5 @@
+import eventlet
+eventlet.monkey_patch()
 from flask import Flask, render_template, request, jsonify
 from flask_socketio import SocketIO
 import pandas as pd
@@ -5,7 +7,6 @@ import os
 import numpy as np
 import torch
 import random
-
 from src.data_loader import load_data
 from src.client_data import split_into_clients
 from src.model import HeartModel
