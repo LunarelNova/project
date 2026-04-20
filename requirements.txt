@@ -3,3 +3,4 @@ flask-socketio
 numpy
 pandas
 eventlet
+scikit-learn
