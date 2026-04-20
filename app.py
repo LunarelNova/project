@@ -5,7 +5,6 @@ from flask_socketio import SocketIO
 import pandas as pd
 import os
 import numpy as np
-import torch
 import random
 from src.data_loader import load_data
 from src.client_data import split_into_clients
@@ -139,7 +138,8 @@ def run_training():
                     except Exception as e:
                         print("🔥 SET_WEIGHTS ERROR:", e)
 
-                weights, _ = train_local(model, data["X"], data["y"])
+                # 🔥 SIMULATED TRAINING (NO TORCH)
+                weights = [np.random.randn(10, 10), np.random.randn(10)]
 
                 # =========================
                 # FLATTEN
