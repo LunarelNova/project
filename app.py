@@ -18,7 +18,7 @@ from src.trusted_authority import TrustedAuthority
 # 🚀 APP SETUP
 # =========================
 app = Flask(__name__)
-socketio = SocketIO(app, cors_allowed_origins="*", async_mode="threading")
+socketio = SocketIO(app, cors_allowed_origins="*")
 
 UPLOAD_FOLDER = "uploads"
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
@@ -280,4 +280,7 @@ def run_training():
 # RUN SERVER
 # =========================
 if __name__ == "__main__":
-    socketio.run(app, host="127.0.0.1", port=5000, debug=True, use_reloader=False)
+
+    port = int(os.environ.get("PORT", 5000))
+
+    socketio.run(app, host="0.0.0.0", port=port)
